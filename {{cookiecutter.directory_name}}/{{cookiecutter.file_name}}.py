@@ -36,4 +36,4 @@ if __name__ == "__main__":
     EXAMPLE_VARIABLE = os.getenv("EXAMPLE_VARIABLE")
 
     # Start here
-    print("Hello World")
+    logger.success("Template Generated!")

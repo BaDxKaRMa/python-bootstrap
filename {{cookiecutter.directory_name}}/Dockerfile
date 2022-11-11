@@ -2,16 +2,17 @@
 
 FROM python:3.9-slim-buster
 
-# Set working directory
-WORKDIR /app
-
 # copy requirements.txt
 COPY requirements.txt .
 
 # Install requirements
 RUN pip install -r requirements.txt
 
+# Set working directory
+WORKDIR /app
+
 # copy project
-COPY . /app
+COPY src/ .
+COPY .env .
 
 ENTRYPOINT ["python", "{{cookiecutter.file_name}}.py"]

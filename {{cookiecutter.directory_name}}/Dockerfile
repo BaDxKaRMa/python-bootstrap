@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . /app
 
-ENTRYPOINT ["{{cookiecutter.file_name}}.py"]
+ENTRYPOINT ["python", "{{cookiecutter.file_name}}.py"]

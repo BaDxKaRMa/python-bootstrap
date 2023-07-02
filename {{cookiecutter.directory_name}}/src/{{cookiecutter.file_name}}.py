@@ -14,7 +14,7 @@ except ImportError:
 try:
     from dotenv import load_dotenv
 except ImportError:
-    print("Please pip install python-dotenv")
+    logger.error("Please pip install python-dotenv")
     sys.exit(1)
 
 
@@ -74,7 +74,10 @@ if __name__ == "__main__":
 
     # Load environment variables
     EXAMPLE_VARIABLE = os.getenv("EXAMPLE_VARIABLE")
-    logger.debug(f"EXAMPLE_VARIABLE: {EXAMPLE_VARIABLE}")
+    if EXAMPLE_VARIABLE:
+        logger.debug(f"EXAMPLE_VARIABLE: {EXAMPLE_VARIABLE}")
+    else:
+        logger.debug("EXAMPLE_VARIABLE is empty or not defined in .env file")
 
     # Start here
     logger.success("Template Generated!")

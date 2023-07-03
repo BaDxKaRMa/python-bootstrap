@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.1.0"
+description = "CookieCutter Python Template"
+authors = ["BaDxKaRMa <bad87karma@gmail.com>"]
+readme = "README.md"
+packages = [{include = "{{cookiecutter.directory_name}}"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+cookiecutter = "^2.1.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "CookieCutter Python Template"
 authors = ["BaDxKaRMa <bad87karma@gmail.com>"]
 readme = "README.md"
-packages = [{include = "{{cookiecutter.directory_name}}"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

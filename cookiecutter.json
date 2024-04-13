@@ -1,4 +1,5 @@
 {
-    "directory_name": "new-project",
-    "file_name": "main"
+  "directory_name": "new-project",
+  "description": "description",
+  "file_name": "main"
 }

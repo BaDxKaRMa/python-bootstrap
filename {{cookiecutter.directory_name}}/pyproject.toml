@@ -2,9 +2,10 @@
 name = "{{cookiecutter.directory_name}}"
 version = "0.1.0"
 description = "CookieCutter Python Template"
-authors = ["BaDxKaRMa <bad87karma@gmail.com>"]
+authors = ["BaDxKaRMa <24795160+BaDxKaRMa@users.noreply.github.com>"]
 readme = "README.md"
 packages = [{include = "src"}]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"

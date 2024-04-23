@@ -1,5 +1,5 @@
 import pytest
-from src import {{cookiecutter.main_module}}
+from src import {{cookiecutter.file_name}}
 
 def test_placeholder():
-    assert {{cookiecutter.main_module}}.placeholder() == "Placeholder function working correctly"
+    assert {{cookiecutter.file_name}}.placeholder() == "Placeholder function working correctly"

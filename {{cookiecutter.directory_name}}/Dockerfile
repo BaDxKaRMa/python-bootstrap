@@ -3,7 +3,10 @@
 FROM python:3.11.7-slim
 
 # Install Poetry
-RUN pip install poetry
+RUN curl -sSL https://install.python-poetry.org | python3 -
+
+# Disable virtualenv creation
+RUN poetry config virtualenvs.create false
 
 # Set working directory
 WORKDIR /app
@@ -18,4 +21,4 @@ RUN poetry install --no-root --no-dev
 COPY src/ .
 COPY .env .
 
-ENTRYPOINT ["python", "{{cookiecutter.file_name}}.py"]
+ENTRYPOINT python -u {{cookiecutter.file_name}}.py

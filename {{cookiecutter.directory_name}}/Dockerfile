@@ -3,7 +3,7 @@
 FROM python:3.11.7-slim
 
 # Install Poetry
-RUN curl -sSL https://install.python-poetry.org | python3 -
+RUN pip install poetry
 
 # Disable virtualenv creation
 RUN poetry config virtualenvs.create false

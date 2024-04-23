@@ -1,17 +1,20 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.11-slim
+FROM python:3.11.7-slim
 
-# copy requirements.txt
-COPY requirements.txt .
-
-# Install requirements
-RUN pip install -r requirements.txt
+# Install Poetry
+RUN pip install poetry
 
 # Set working directory
 WORKDIR /app
 
-# copy project
+# Copy pyproject.toml and poetry.lock file
+COPY pyproject.toml poetry.lock* ./
+
+# Install dependencies
+RUN poetry install --no-root --no-dev
+
+# Copy project
 COPY src/ .
 COPY .env .
 

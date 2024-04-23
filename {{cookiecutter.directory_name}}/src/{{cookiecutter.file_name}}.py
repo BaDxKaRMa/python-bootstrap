@@ -14,7 +14,7 @@ except ImportError:
 try:
     from dotenv import load_dotenv
 except ImportError:
-    logger.error("Please pip install python-dotenv")
+    print("Please pip install python-dotenv")
     sys.exit(1)
 
 

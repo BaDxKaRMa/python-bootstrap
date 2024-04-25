@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM python:3.11.7-slim
+FROM python:3.11.9-slim
 
 # Install Poetry
 RUN pip install poetry

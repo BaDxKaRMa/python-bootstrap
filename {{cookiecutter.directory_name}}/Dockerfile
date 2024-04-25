@@ -21,4 +21,4 @@ RUN poetry install --no-root --no-dev
 COPY src/ .
 COPY .env .
 
-ENTRYPOINT python -u {{cookiecutter.file_name}}.py
+ENTRYPOINT ["python", "-u", "{{cookiecutter.file_name}}.py"]

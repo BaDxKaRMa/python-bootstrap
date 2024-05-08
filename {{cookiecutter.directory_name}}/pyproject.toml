@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "{{cookiecutter.directory_name}}"
 version = "0.1.0"
-description = "{{cookiecutter.description}}"
+description = "{{cookiecutter.project_short_description}}"
 authors = ["BaDxKaRMa <24795160+BaDxKaRMa@users.noreply.github.com>"]
 readme = "README.md"
 license = "GPL-3.0"

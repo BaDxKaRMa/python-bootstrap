@@ -1,5 +1,12 @@
 {
-  "directory_name": "new-project",
-  "description": "description",
-  "file_name": "main"
+  "full_name": "Ralph Hittell",
+  "email": "24795160+BaDxKaRMa@users.noreply.github.com",
+  "github_username": "BaDxKaRMa",
+  "project_name": "Python Boilerplate",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+  "directory_name": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "version": "0.1.0",
+  "file_name": "main",
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 }
